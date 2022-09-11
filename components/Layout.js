@@ -11,7 +11,7 @@ const Layout = ({ children, title }) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section>
-        <div className='flex min-h-screen flex-col justify-between'>
+        <div className='flex min-h-fit flex-col justify-between'>
           <header className=' bg-slate-100'>
             <div className='container mx-auto'>
               <nav className='flex items-center justify-between p-4'>
@@ -22,20 +22,26 @@ const Layout = ({ children, title }) => {
                 </div>
                 <div className='flex gap-4'>
                   <Link href={'/cart'}>
-                    <a className='action-button text-slate-700 hover:text-slate-50 border-2 border-slate-600 hover:border-slate-700 hover:bg-slate-800'>
+                    <button
+                      className='action-button text-slate-700 hover:text-slate-50 border-2 border-slate-600 hover:border-slate-700 hover:bg-slate-800'
+                      type='button'
+                    >
                       Cart
-                    </a>
+                    </button>
                   </Link>
                   <Link href={'/login'}>
-                    <a className='action-button text-slate-50 hover:bg-slate-900 bg-slate-800'>
+                    <button
+                      className='action-button text-slate-50 hover:bg-slate-900 bg-slate-800'
+                      type='button'
+                    >
                       Login
-                    </a>
+                    </button>
                   </Link>
                 </div>
               </nav>
             </div>
           </header>
-          <main className='container mx-auto p-4'>{children}</main>
+          <main className='container min-h-screen mx-auto p-4'>{children}</main>
           <footer className=' bg-slate-100 shadow-inner'>
             <div className='container mx-auto'>
               <div className='flex justify-center items-center p-4'>
