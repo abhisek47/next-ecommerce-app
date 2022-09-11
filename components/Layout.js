@@ -22,12 +22,12 @@ const Layout = ({ children, title }) => {
                 </div>
                 <div className='flex gap-4'>
                   <Link href={'/cart'}>
-                    <a className='font-medium text-slate-500 hover:text-slate-800 ease-out duration-300'>
+                    <a className='action-button text-slate-700 hover:text-slate-50 border-2 border-slate-600 hover:border-slate-700 hover:bg-slate-800'>
                       Cart
                     </a>
                   </Link>
                   <Link href={'/login'}>
-                    <a className='font-medium text-slate-500 hover:text-slate-800 ease-out duration-300'>
+                    <a className='action-button text-slate-50 hover:bg-slate-900 bg-slate-800'>
                       Login
                     </a>
                   </Link>
@@ -39,7 +39,9 @@ const Layout = ({ children, title }) => {
           <footer className=' bg-slate-100 shadow-inner'>
             <div className='container mx-auto'>
               <div className='flex justify-center items-center p-4'>
-                <p className='font-medium text-sm text-slate-500'>Copyright © 2022 - Amazona</p>
+                <p className='font-medium text-sm text-slate-500'>
+                  Copyright © 2022 - Amazona
+                </p>
               </div>
             </div>
           </footer>

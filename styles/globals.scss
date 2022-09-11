@@ -13,3 +13,15 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.card {
+  @apply mb-5 block rounded-lg border border-slate-300 shadow-sm;
+}
+
+.primary-button {
+  @apply rounded bg-amber-300 py-2 px-4 shadow outline-none hover:bg-amber-400 active:bg-amber-500 mt-4 font-medium ease-out duration-300;
+}
+
+.action-button {
+  @apply font-medium rounded-md flex items-center py-1 px-6 ease-out duration-300;
+}
